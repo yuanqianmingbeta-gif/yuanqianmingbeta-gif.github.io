@@ -1,0 +1,38 @@
+[data-lang="cn"] {
+  line-break: strict;
+}
+
+[data-lang="cn"] :is(.display-xl, .section-title) {
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-wrap: balance;
+}
+
+[data-lang="cn"] .eyebrow {
+  letter-spacing: 0.02em;
+}
+
+[data-lang="cn"] .prose-body {
+  max-inline-size: min(100%, 36em);
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+
+[data-lang="cn"] [data-component="Card"] {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+[data-lang="cn"] [data-component="SectionHeading"] p {
+  margin-block-start: 0.15em;
+}
+
+@media (max-width: 767px) {
+  [data-lang="cn"] .display-xl {
+    font-size: clamp(2rem, 8.5vw, 2.5rem);
+  }
+
+  [data-lang="cn"] .section-title {
+    font-size: clamp(1.5rem, 6.3vw, 1.75rem);
+  }
+}
